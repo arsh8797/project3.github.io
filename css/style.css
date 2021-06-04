@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+.fa{
+    visibility: hidden;
+    display: none;
+}
+.fas{
+    visibility: hidden;
+    display: none;
+}
+
+#sec{
+    position: relative;
+    background-image:url(../images/eduford_img/banner.png) ;
+    background-position: center;
+    width: 100%;
+    opacity: .80;
+    background-size: cover;
+    height: 100vh;
+}
+#sec #logo img{
+    /* display: none; */
+    width:30px;
+    height:30px;
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2% 6%;
+    
+
+}
+.nav ul{
+    /* padding: 2% 0% 2% 6%; */
+    
+    display:flex;
+    /* text-decoration-line: none; */
+    margin: 0% 0% 0% 20%;
+
+    flex-direction:row;
+    justify-content: space-evenly;
+    list-style: none;
+    
+}
+#sec #logo img{
+    width: 105px;
+}
+.nav ul li a{
+    margin: 5px;
+    padding: 5px;
+    text-decoration:none;
+    text-shadow: 2px 1px 3px 6px darkgrey;
+}
+.nav ul li{
+  border-left: 2px solid whitesmoke;
+  height: 15px;
+}
+.nav ul li::after{
+    content: "";
+    /* position: absolute; */
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav ul li:hover::after{
+    width: 100%;
+}
+
+.nav ul li a:hover{
+    scale: (1.4);
+    /* text-decoration: underline; */
+    /* background: black; */
+    color: whitesmoke;
+    border-radius: 15px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: darkkhaki */
+    margin-top: 10%;
+}
+.container .btn{
+    padding: 15px;
+    margin-top: 12px;
+    display: inline-block;
+    background: transparent;
+    text-decoration: none;
+    font-size: 15px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.container .btn:hover{
+    background: rgb(224, 211, 211);
+    border: 2px solid black;
+    color: whitesmoke;
+    /* text-transform: uppercase; */
+
+}
+.container .btn a{
+    text-decoration: none;
+
+}
+.container .heading{
+    text-align: center;
+}
+.container .heading h1{
+    font-size: 34px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer {
+    background: black;
+}
+footer .rights {
+    color: whitesmoke;
+    text-align: center;
+}
+footer .container{
+    display: flex;
+    flex-direction: row;
+}
+footer .container .contact{
+    position: relative;
+    right: 20%;
+}
+footer .container .contact h5{
+
+    color: whitesmoke;
+}
+footer .container .link{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    left: 25%;
+    
+}
+footer .container .link .cn{
+    
+    padding: 12px
+}
+footer .container .link .cn a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 12px
+}
